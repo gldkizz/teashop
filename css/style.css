@@ -308,6 +308,108 @@ body{
     justify-content: center;
 }
 
+.mailing-list{
+    padding: 100px 0;
+    background-color: #F7F2EA;
+    background-image: url(../images/mailing-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.mailing-list__title{
+    font-family: 'Cormorant', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.mailing-list__inner{
+    display: flex;
+    gap: 60px 40px;
+}
+
+.mailing-list__text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    flex-basis: 580px;
+}
+
+.mailing-list__form{
+    max-width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 580px;
+}
+
+.mailing-list__email{
+    border: none;
+    border-bottom: 1px solid #B8B58B;
+    background-color: transparent;
+    padding: 18px 0 3px 15px;
+    width: 437px;
+    margin-right: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #151618;
+}
+
+.mailing-list__email::placeholder{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #B8B58B;
+}
+
+.mailing-list__btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #151618;
+    padding: 12px 41px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.checkbox__text{
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.mailing-list__label{
+    margin-top: 16px;
+}
+
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.checkbox__style{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #151618;
+    margin-top: 5px;
+}
+
+.checkbox:checked + .checkbox__style::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #151618;
+    bottom: 1px;
+    right: 1px;
+}
+
+
 @media (max-width:1200px){
     .feedback__item{
         justify-content: space-evenly;

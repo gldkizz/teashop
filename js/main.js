@@ -12,6 +12,9 @@ menuClose.addEventListener('click',()=>{
     menuShadow.classList.remove('menu--open')
 });
 
+
+
+
 // $(function(){
 //     $(window).on('load resize', function(){
 //         let $width = $(window).width();
