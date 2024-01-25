@@ -12,7 +12,19 @@ menuClose.addEventListener('click',()=>{
     menuShadow.classList.remove('menu--open')
 });
 
+$(function(){
+    const $checkbox = $('.checkbox');
+    const $checkBtn = $('.mailing-list__btn');
+    const $checkInner = $('.checkbox__inner');
 
+    $checkbox.on('change',function(){
+        if($(this).is(':checked')){
+            $checkBtn.prop('disabled',false);
+        }else{
+            $checkBtn.prop('disabled',true);
+        }
+    })
+});
 
 
 // $(function(){

@@ -372,6 +372,9 @@ body{
     font-weight: 300;
     cursor: pointer;
 }
+.mailing-list__btn:disabled{
+    cursor: default;
+}
 
 .checkbox__text{
     font-size: 13px;
@@ -407,6 +410,14 @@ body{
     background-color: #151618;
     bottom: 1px;
     right: 1px;
+}
+
+.disabled{
+    display: none;
+}
+
+.enabled{
+    display: block;
 }
 
 
