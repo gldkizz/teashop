@@ -64,6 +64,11 @@ body{
     z-index: 3;
 }
 
+.menu__item:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 .menu__btn{
     display: none;
     width: 40px;
@@ -176,8 +181,13 @@ body{
     position: relative;
 }
 
-.collection__item img{
+.collection__item-img{
     width: 100%;
+}
+
+.collection__item-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .collection__item-text{
@@ -242,6 +252,10 @@ body{
     margin-bottom: 60px;
 }
 
+.main-blog{
+    margin-bottom: 150px;
+}
+
 .main-blog__list{
     display: flex;
     flex-wrap: wrap;
@@ -302,10 +316,15 @@ body{
     font-weight: 300;
     line-height: normal;
     padding: 12px 41px;
-    margin: 20px auto 150px;
+    margin: 20px auto 0;
     border: 1px solid #151618;
     display: flex;
     justify-content: center;
+}
+
+.main-blog__link:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
 .mailing-list{
