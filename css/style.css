@@ -481,6 +481,7 @@ body{
     margin-bottom: 50px
 }
 
+
 .products{
     width: 97px;
     margin-right: 213px;
@@ -553,8 +554,9 @@ body{
 
 .contacts__tel-inner{
     width: 140px;
-    height: 20px;
+    height: 22px;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .contacts__tel-img{
@@ -565,6 +567,7 @@ body{
     width: 143px;
     height: 18px;
     margin: 0 auto;
+    display: flex;
 }
 
 .contacts__mail-img{
@@ -588,6 +591,12 @@ body{
     display: flex;
     gap: 20px;
     justify-content: right;
+    align-items: center;
+}
+
+.contacts__list-link{
+    display: flex;
+    align-self: center;
 }
 
 .other__list{
@@ -603,7 +612,13 @@ body{
 
 .other__list-list{
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+
+.other__list-list--icon{
+    display: flex;
+    align-self: center;
 }
 
 @media (max-width:1200px){
@@ -613,6 +628,59 @@ body{
     .feedback__item:last-child{
         display: none;
     } 
+    .main-blog{
+        margin-bottom: 120px;
+    }
+    .main-blog__item-img{
+        width: 230px;
+        height: 153px;
+    }
+    .main-blog__item-text{
+        margin-bottom: 21px;
+    }
+    .mailing-list{
+        padding: 60px 0;
+        margin-bottom: 120px;
+    }
+    .mailing-list__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mailing-list__inner{
+        flex-wrap: wrap;
+    }
+    .mailing-list__text{
+        margin: 0 auto;
+        flex-basis: 780px;
+        text-align: center;
+    }
+    .mailing-list__form{
+        margin: 0 auto;
+    }
+    .priorities{
+        margin-bottom: 120px;
+    }
+    .priorities__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .priorities__list-item{
+        margin-bottom: 31px;
+        margin-right: 210px;
+    }
+    .priorities__list-item:nth-child(2n){
+        margin-right: 0;
+    }
+    .products{
+        margin-right: 60px;
+    }
+    .company{
+        margin-right: 54px;
+        margin-bottom: 55px;
+    }
+    .quatation{
+        margin: 0 55px 0 0;
+    }
 }
 
 @media (max-width:1000px){
@@ -634,6 +702,35 @@ body{
     .blockquote__text{
         margin-top: 120px;
         margin-bottom: 135px;
+    }
+    .main-blog__item{
+        margin-bottom: 30px;
+    }
+    .main-blog__item:nth-child(2n){
+        margin-left: 162px;
+    }
+
+    .footer__inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+    
+    .products{
+        margin-left: 64px;
+        margin-right: 52px;
+    }
+    .company{
+        margin-right: 67px;
+        margin-bottom: 197px;
+    }
+    .quatation{
+
+    }
+    .contacts{
+        grid-template-columns: 60px 60px;
+    }
+    .other{
+        margin: 0 auto;
     }
 }
 
